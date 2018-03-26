@@ -1,0 +1,149 @@
+.settings{
+  color:#000;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+
+  .settings-col{
+    display: inline-block;
+  }
+  .label{
+    margin-right: 15px;
+    color:#fff;
+    font-weight: 700; 
+    vertical-align: middle;
+  }
+  .control{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    &:before{
+      content:"";
+      display: inline-block;
+      position: absolute;
+      bottom: -8px;
+      left:50%;
+      margin-left: -4px;
+      border: 4px solid transparent; 
+      border-top: 4px solid transparent; 
+    }
+
+    &.font-control{
+      &:hover{
+        background: #000;
+        color:#fff;
+        &:before{
+          border-top: 4px solid #000; 
+        }
+      }
+      &.active{
+        background: #000;
+        color:#fff;
+        &:before{
+          border-top: 4px solid #000; 
+        }
+      }
+    }
+    &.colors-control{
+
+    }
+    &.white-control{
+      background: #fff;
+      color:#000;
+      &:hover{
+        &:before{
+          border-top: 4px solid #fff; 
+        }
+      }
+      &.active{
+        &:before{
+          border-top: 4px solid #fff; 
+        }
+      }
+    }
+    &.black-control{
+      background:#000;
+      color:#fff;
+      &:hover{
+        &:before{
+          border-top: 4px solid #000; 
+        }
+      }
+      &.active{
+        &:before{
+          border-top: 4px solid #000; 
+        }
+      }
+    }
+    &.blue-control{
+      background: #6294c9;
+      color:#0553a8;
+      &:hover{
+        &:before{
+          border-top: 4px solid #6294c9; 
+        }
+      }
+      &.active{
+        &:before{
+          border-top: 4px solid #6294c9; 
+        }
+      }
+    }
+
+  }
+  .image-settings{
+    .images-settings{
+      width: 20px;
+      height: 20px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      display: inline-block;
+      position:relative;
+      vertical-align: middle; 
+      cursor:pointer;
+
+      &.active{
+        .images-inner{
+          background: rgba(255,255,255,1);  
+        }
+
+      }
+      .images-inner{
+        width: 12px;
+        height: 12px;
+        background: rgba(255,255,255,0);
+        display: inline-block;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -6px;
+        margin-top: -6px;
+      }
+    }
+  }
+}
+
+.theme-default{
+  position: absolute;
+  top: 10px;
+  right: 19px;
+  a{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(../images/hide.png) no-repeat;
+  }
+}
+   
+.eye-close{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(../images/hide.png) no-repeat;
+}
