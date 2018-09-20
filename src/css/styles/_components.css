@@ -1,0 +1,49 @@
+body {
+   font-family: 'Spirax';
+   text-transform: uppercase;
+   font-size: 30px;
+}
+*{
+  font-family: inherit;
+}
+
+.sgrid-N {
+
+  @media screen and (orientation: landscape) {
+    width: 500px;
+  }
+}
+
+.adasd{
+display: flex;
+}
+.error {
+  border: 1px #f00;
+  background-color: #fdd;
+  @include border(50px);
+  display: flex;
+  @media(--small-viewport){
+    display: none;
+  }
+  .test{
+    display: none;
+  }
+  .test2{
+    display: block;
+  }
+}
+.attention {
+  font-size: 3em;
+  background-color: #ff0;
+}
+.seriousError {
+
+  border-width: 3px;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+  @media (max-width: 450px) {
+    display: none;
+  }
+}

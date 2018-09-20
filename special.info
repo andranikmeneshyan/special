@@ -2,11 +2,6 @@ name = Special theme
 description = Special version of site
 core = 7.x
 engine = phptemplate
-stylesheets[all][] = css/reset.css
-stylesheets[all][] = css/style.css
-
-scripts[] = js/js.js
-
 regions[header]         = Header
 regions[navigation]     = Navigation
 regions[highlighted]    = Highlighted

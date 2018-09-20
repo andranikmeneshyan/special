@@ -1,0 +1,8 @@
+$black: #000;
+@mixin border($radius){
+  border-radius: $radius;
+}
+
+/*Breakpoints*/
+
+@custom-media --small-viewport (max-width: 480px);
