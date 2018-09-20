@@ -1,41 +1,32 @@
 {
-  "name": "special",
+  "name": "devtheme",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andranikmeneshyan/special.git"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^8.6.0",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.2.3",
     "gulp-sourcemaps": "^2.6.4",
+    "gulp-tinypng-compress": "^1.2.1",
     "gulp-uglify": "^3.0.0",
     "gulp.spritesmith": "^6.9.0",
     "postcss-custom-media": "^6.0.0",
     "postcss-font-magician": "^2.2.1",
     "precss": "^3.1.2",
-    "pump": "^3.0.0"
+    "pump": "^3.0.0",
+    "run-sequence": "^2.2.1"
   },
   "dependencies": {
     "npm": "^6.1.0",
     "to": "^0.2.9",
-    "update": "^0.7.4",
-    "gulp-tinypng-compress": "^1.2.1"
-  },
-
-
-
-  "bugs": {
-    "url": "https://github.com/andranikmeneshyan/special/issues"
-  },
-  "homepage": "https://github.com/andranikmeneshyan/special#readme"
+    "update": "^0.7.4"
+  }
 }

@@ -1,4 +1,58 @@
-@import "vars/vars";
-@import "styles/components";
-@import "styles/test";
-@import "styles/test1";
+/*Breakpoints*/
+body {
+   font-family: 'Spirax';
+   text-transform: uppercase;
+   font-size: 30px;
+}
+*{
+  font-family: inherit;
+}
+@media screen and (orientation: landscape) {
+   .sgrid-N {
+      width: 500px;
+   }
+}
+.adasd{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+}
+.error {
+  border: 1px #f00;
+  background-color: #fdd;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 480px) {
+   .error {
+      display: none;
+   }
+}
+.error .test {
+    display: none;
+}
+.error .test2 {
+    display: block;
+}
+.attention {
+  font-size: 3em;
+  background-color: #ff0;
+}
+.seriousError {
+
+  border-width: 3px;
+}
+@media (max-width: 500px) {
+   .seriousError {
+      display: none;
+   }
+}
+@media (max-width: 450px) {
+   .seriousError {
+      display: none;
+   }
+}
+
+/*# sourceMappingURL=screen.css.map */
