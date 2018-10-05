@@ -1,8 +1,21 @@
 $black: #000;
+$white:#fff;
+$dark-blue:#0553a8;
+$light-blue:#6294c9;
+
+
+ 
+
+$main-color:#000;
+$main-font-size:16px;
+$main-middle-size:18px;
+$main-big-size: 20px;
+
+$content-width: 960px;
 @mixin border($radius){
   border-radius: $radius;
 }
-
+ 
 /*Breakpoints*/
 
 @custom-media --small-viewport (max-width: 480px);

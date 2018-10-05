@@ -89,4 +89,4 @@ gulp.task('build:js', function (callback) {
 gulp.task('build',function(){
   del(['./dist']);
   runSequence('css',['build:css', 'build:images', 'build:js']);
-})
+});
