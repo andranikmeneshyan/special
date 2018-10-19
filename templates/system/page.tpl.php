@@ -15,6 +15,7 @@
           <span data-color="blue-scheme" class="blue-control colors-control control blue-scheme">Ц</span>           
         </div> 
         <div class="image-settings settings-col"><span class="images-label label">Изображения:</span><span class="images-settings-inner"><span class="images-inner"></span></span></div>
+      <div class="settings-col switcher-col"><a href="?theme"><i class="icon icon-eye"></i></a></div>
       </div>
     </div>  
    

@@ -151,7 +151,13 @@ p{
 .settings-wrapper .settings-col{
     display: inline-block;
     vertical-align: middle;
+    margin-left: 20px
   }
+
+.settings-wrapper .settings-col.switcher-col{
+  margin-left: 40px;
+
+}
 
 .settings-wrapper .control{
     cursor:pointer;
@@ -279,6 +285,14 @@ p{
       right: 1px;
 
 }
+
+.icon{
+  display: inline-block;
+}
+
+.switcher-col .icon{
+    vertical-align: middle;
+  }
 
 
 /*# sourceMappingURL=screen.css.map */

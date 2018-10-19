@@ -1,13 +1,13 @@
 (function ($) {
   Drupal.behaviors.special = {
     attach: function (context, settings) {
-      const storage = window.localStorage;
-      const $html = $('html').eq(0);
-      const $fontSettingsContainer = $('.font-settings');
-      const $colorSettingsContaier = $('.color-settings');
-      const $imgSettingsContainer = $('.image-settings');
+      var storage = window.localStorage;
+      var $html = $('html').eq(0);
+      var $fontSettingsContainer = $('.font-settings');
+      var $colorSettingsContaier = $('.color-settings');
+      var $imgSettingsContainer = $('.image-settings');
       if (storage.getItem('fontSize')) {
-        let fontSizeClass = storage.getItem('fontSize');
+        var fontSizeClass = storage.getItem('fontSize');
         $html.addClass(fontSizeClass);
         $('.' + fontSizeClass, $fontSettingsContainer).addClass('active');
       } else {
@@ -15,7 +15,7 @@
         $('.font-small', $fontSettingsContainer).addClass('active');
       }
       if (storage.getItem('colorScheme')) {
-        let colorScheme = storage.getItem('colorScheme');
+        var colorScheme = storage.getItem('colorScheme');
         $html.addClass(colorScheme);
         $('.' + colorScheme, $colorSettingsContaier).addClass('active');
       } else {
@@ -23,20 +23,20 @@
         $('.white-scheme', $colorSettingsContaier).addClass('active');
       }
       if (storage.getItem('imagesMode') === 'on' || !storage.getItem('imagesMode')) {
-        let $imagesControl = $('.images-settings-inner');
+        var $imagesControl = $('.images-settings-inner');
         $imagesControl.removeClass('images-off');
          $html.removeClass('images-off');
         storage.setItem('imagesMode', 'on');
       } else {
         $html.addClass('images-off');
-        let $imagesControl = $('.images-settings-inner');
+        var $imagesControl = $('.images-settings-inner');
         $imagesControl.addClass('images-off');
         storage.setItem('imagesMode', 'off');
       }
 
       $imgSettingsContainer.click(function (e) {
-        let imagesMode = storage.getItem('imagesMode');
-        let $imagesControl = $('.images-settings-inner');
+        var imagesMode = storage.getItem('imagesMode');
+        var $imagesControl = $('.images-settings-inner');
 
         if (!imagesMode || imagesMode === 'on') {
           $imagesControl.addClass('images-off');
